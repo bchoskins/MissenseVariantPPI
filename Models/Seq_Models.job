@@ -1,0 +1,22 @@
+#!/bin/sh
+#$ -q JM-GPU@argon-itf-bx51-15.hpc
+#$ -pe smp 30
+#$ -l ngpus=1
+#$ -e /Dedicated/jmichaelson-wdata/rotating_students/bhoskins/ProteinData/
+#$ -o /Dedicated/jmichaelson-wdata/rotating_students/bhoskins/ProteinData/
+
+# activate conda environment
+conda activate myenv
+
+# job launching stuff
+python /Dedicated/jmichaelson-wdata/rotating_students/bhoskins/ProteinData/PPI_RNN_1.py
+python /Dedicated/jmichaelson-wdata/rotating_students/bhoskins/ProteinData/PPI_RNN_2.py
+python /Dedicated/jmichaelson-wdata/rotating_students/bhoskins/ProteinData/PPI_RNN_3.py
+python /Dedicated/jmichaelson-wdata/rotating_students/bhoskins/ProteinData/PPI_RNN_4.py
+python /Dedicated/jmichaelson-wdata/rotating_students/bhoskins/ProteinData/PPI_RNN_5.py
+python /Dedicated/jmichaelson-wdata/rotating_students/bhoskins/ProteinData/PPI_RNN_6.py
+python /Dedicated/jmichaelson-wdata/rotating_students/bhoskins/ProteinData/PPI_RNN_7.py
+python /Dedicated/jmichaelson-wdata/rotating_students/bhoskins/ProteinData/PPI_RNN_8.py
+python /Dedicated/jmichaelson-wdata/rotating_students/bhoskins/ProteinData/PPI_RNN_9.py
+python /Dedicated/jmichaelson-wdata/rotating_students/bhoskins/ProteinData/PPI_RNN_10.py
+
